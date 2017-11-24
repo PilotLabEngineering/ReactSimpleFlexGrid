@@ -28,7 +28,7 @@ export default class Row extends React.Component {
     const classes = cx(s[`${prefix}`], {
       [s[`${prefix}-${justify}`]]: justify,
       [s[`${prefix}-${align}`]]: align,
-      [s[`${prefix}-${direction}`]]: direction,
+      [s[`${prefix}-direction-${direction}`]]: direction,
     }, className);
     const rowStyle = gutter > 0 ? Object.assign({}, {
       marginLeft: gutter / -2,
