@@ -41,7 +41,7 @@
 }
 
 @mixin create-grid-options($class) {
-  @for $i from 1 through $grid-columns {
+  @for $i from 0 through $grid-columns {
     .#{$prefix}-col#{$class}-#{$i} {
       display: block;
       width: percentage($i / $grid-columns);
